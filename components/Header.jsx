@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Logo from '../public/Airbnb_Logo.svg'
 import {
   MagnifyingGlassIcon,
   GlobeAltIcon,
@@ -12,9 +10,8 @@ const Header = () => {
     <div className="sticky top-0 z-50 grid grid-cols-3 items-center gap-3 bg-white p-3  shadow-md md:px-10">
       {/* left */}
       <div className="relative flex h-10 items-center justify-between">
-        {/* Problem here not rendering image */}
-        <Image
-          src={Logo}
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png"
           width="100px"
           height="50px"
           objectFit="contain"
@@ -29,12 +26,14 @@ const Header = () => {
           placeholder="Start your search"
           className="w-full flex-grow bg-transparent pl-5 text-sm text-gray-400 outline-none md:flex-auto"
         />
-        <MagnifyingGlassIcon className="hidden h-8 cursor-pointer rounded-full bg-red-400  text-white md:inline-flex" />
+        <MagnifyingGlassIcon className="bg-red-400 hidden h-8 cursor-pointer rounded-full  text-white md:inline-flex" />
       </div>
 
       {/* right */}
       <div className="flex items-center justify-end space-x-4 text-gray-500">
-        <p className="hidden font-semibold md:inline">become host</p>
+        <p className="hidden cursor-pointer px-3 py-1 font-semibold hover:rounded-full hover:border-2 hover:border-slate-400 md:inline">
+          become host
+        </p>
         <GlobeAltIcon className="h-6 cursor-pointer" />
 
         <div className="flex items-center space-x-2 rounded-full border-2 border-slate-400 px-3 py-1">
