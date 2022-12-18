@@ -11,7 +11,7 @@ const Header = () => {
     <div className="sticky top-0 z-50 grid grid-cols-3 items-center gap-3 bg-white p-3  shadow-md md:px-10">
       {/* left */}
       <div className="relative flex h-10 items-center justify-between">
-        <Image
+        <src
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png"
           width="100px"
           height="50px"
